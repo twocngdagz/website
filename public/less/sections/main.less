@@ -1,0 +1,100 @@
+.simple-list
+{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+
+    li
+    {
+        margin:0;
+        padding:0;
+    }
+}
+
+body
+{
+    font-family: "proxima-nova", serif;
+    color:#555;
+}
+
+a, a:visited
+{
+    color:#DE6B23;
+    text-decoration:none;
+
+    &:hover
+    {
+        text-decoration:underline;
+    }
+}
+
+.container
+{
+    width:840px;
+    margin:5em auto;
+    overflow:hidden;
+
+    .sidebar
+    {
+        width:180px;
+        float:left;
+    }
+
+    .content
+    {
+        width:620px;
+        float:right;
+        overflow:hidden;
+    }
+}
+
+.main-menu
+{
+    ul
+    {
+        .simple-list;
+    }
+}
+
+.posts
+{
+    article
+    {
+        h1
+        {
+            font-family: "pragmatica-web";
+            font-weight:200;
+            margin:0;
+
+            a, a:visited
+            {
+                color:#999;
+            }
+        }
+
+        .meta
+        {
+            display:block;
+            font-family: "pragmatica-web";
+            font-weight:200;
+            color:#ddd;
+            font-size:0.8em;
+            //text-transform:uppercase;
+            line-height:1em;
+            margin:0 0 2em 0;
+        }
+
+        p
+        {
+            line-height:1.6em;
+            margin:0 0 2em 0;
+        }
+
+        .back-link
+        {
+            display:block;
+            font-family: "pragmatica-web";
+            font-weight:200;
+        }
+    }
+}

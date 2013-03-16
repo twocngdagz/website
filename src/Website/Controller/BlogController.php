@@ -4,6 +4,7 @@ namespace Website\Controller;
 
 use App;
 use View;
+use Paginator;
 use Controller;
 
 class BlogController extends Controller
@@ -11,7 +12,8 @@ class BlogController extends Controller
     public function showIndex()
     {
         $blog = App::make('blog');
-        $data['posts'] = $blog->findAll();
+        $posts = $blog->findAll();
+        $data['posts'] = Paginator::make($posts, count($posts), 1);
         return View::make('index', $data);
     }
 
