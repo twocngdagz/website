@@ -17,11 +17,19 @@ class ArticleRepository
     private $path;
 
     /**
+     * The duration to cache the article index in minutes.
+     *
+     * @var int
+     */
+    private $cacheDuration;
+
+    /**
      * Set the markdown content path.
      */
     public function __construct()
     {
-        $this->path = Config::get('website.content');
+        $this->path = Config::get('website.content', '/');
+        $this->cacheDuration = Config::get('website.cache', 30);
     }
 
     /**
@@ -57,7 +65,7 @@ class ArticleRepository
     {
         $articleReader = new ArticleReader($this->path);
         $articles = $articleReader->read();
-        Cache::put('website.index', $articles, 30);
+        Cache::put('website.index', $articles, $this->cacheDuration);
         $this->buildIndividualCache($articles);
         return $articles;
     }
