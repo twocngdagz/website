@@ -7,6 +7,8 @@ use dflydev\markdown\MarkdownExtraParser;
 
 class Article
 {
+    const MORE_SPLITTER = '/---more---/';
+
     /**
      * The body content of the article.
      *
@@ -71,7 +73,15 @@ class Article
     public function getHtml()
     {
         $markdownExtra = new MarkdownExtraParser();
-        return $markdownExtra->transformMarkdown($this->body);
+        $html = preg_replace(self::MORE_SPLITTER, '', $this->body);
+        return $markdownExtra->transformMarkdown($html);
+    }
+
+    public function getExcerpt()
+    {
+        $markdownExtra = new MarkdownExtraParser();
+        $parts = preg_split(self::MORE_SPLITTER, $this->body);
+        return $markdownExtra->transformMarkdown($parts[0]);
     }
 
     /**

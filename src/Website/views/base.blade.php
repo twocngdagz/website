@@ -21,20 +21,20 @@
 
         <div class="container">
             <header class="sidebar">
-                <a href="#" class="logo"><img src="{{ asset('img/logo.png') }}" /></a>
-                <nav class="main-menu">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Code Happy</a></li>
-                        <li><a href="#">Code Bright</a></li>
-                        <li><a href="#">Colour Schemes</a></li>
-                        <li><a href="#">About</a></li>
-                    </ul>
-                </nav>
+                <a href="{{ route('index') }}" title="Dayle Rees" class="logo"><img src="{{ asset('img/logo.png') }}" /></a>
+                <a href="http://leanpub.com/codehappy" title="Code Happy for the Laravel PHP Framework" class="ad-link">
+                    <img src="{{ asset('img/codehappyad.jpg') }}" alt="Code Happy">
+                    <span class="caption">Code Happy, the number one resource for learning the Laravel PHP framework.</span>
+                </a>
+                <a href="https://github.com/daylerees/colour-schemes" title="Dayle Rees Colour Schemes for Sublime Text 2 and more." class="ad-link">
+                    <img src="{{ asset('img/colourschemesad.jpg') }}" alt="Dayle Rees Colour Schemes">
+                    <span class="caption">A collection of unique colour schemes for Sublime Text 2 and more.</span>
+                </a>
             </header>
             <section class="content">
                 @yield('body')
             </section>
+            <div class="clearfix"></div>
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
