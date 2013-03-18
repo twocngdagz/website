@@ -96,6 +96,12 @@ class ArticleReader
         return $documents;
     }
 
+    /**
+     * Sort article collection by date.
+     *
+     * @param  array  $articles
+     * @return void
+     */
     public function sortArticles(array &$articles)
     {
         usort($articles, function($a, $b)

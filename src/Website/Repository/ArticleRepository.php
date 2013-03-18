@@ -6,6 +6,8 @@ use Website\Model\Article;
 use Website\Reader\ArticleReader;
 use Config;
 use Cache;
+use Input;
+use Paginator;
 
 class ArticleRepository
 {
@@ -81,5 +83,21 @@ class ArticleRepository
         foreach ($articles as $article) {
             Cache::forever($article->getSlug(), $article);
         }
+    }
+
+    /**
+     * Paginate a collection of posts.
+     *
+     * @param  integer $perPage
+     * @return Paginator
+     */
+    public function paginate($perPage = 8)
+    {
+        $posts = $this->findAll();
+        $page = Input::get('page', 1) - 1;
+        $total = count($posts);
+        $start = $page * $perPage;
+        $posts = array_slice($posts, $start, $perPage);
+        return Paginator::make($posts, $total, $perPage);
     }
 }
