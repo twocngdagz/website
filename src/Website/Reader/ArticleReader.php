@@ -37,7 +37,9 @@ class ArticleReader
         $documents = $this->parseDocuments($sources);
 
         $articleFactory = new ArticleFactory();
-        return $articleFactory->buildArticleCollection($documents);
+        $articles = $articleFactory->buildArticleCollection($documents);
+        $this->sortArticles($articles);
+        return $articles;
     }
 
     /**
@@ -92,5 +94,16 @@ class ArticleReader
             }
         }
         return $documents;
+    }
+
+    public function sortArticles(array &$articles)
+    {
+        usort($articles, function($a, $b)
+        {
+            $a = $a->getDate()->getTimestamp();
+            $b = $b->getDate()->getTimestamp();
+            if ($a == $b) return 0;
+            return ($a > $b) ? -1 : 1;
+        });
     }
 }
