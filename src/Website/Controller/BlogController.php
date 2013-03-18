@@ -16,7 +16,7 @@ class BlogController extends Controller
     public function showIndex()
     {
         $blog = App::make('blog');
-        $data['posts'] = $blog->paginate(1);
+        $data['posts'] = $blog->paginate(3);
         return View::make('index', $data);
     }
 
@@ -29,5 +29,15 @@ class BlogController extends Controller
         $blog = App::make('blog');
         $data['post'] = $blog->findBySlug($slug);
         return View::make('single', $data);
+    }
+
+    /**
+     * Build a sitemap.xml for SEO purposes.
+     */
+    public function showSitemap()
+    {
+        $blog = App::make('blog');
+        $data['posts'] = $blog->findAll();
+        return View::make('sitemap', $data);
     }
 }
