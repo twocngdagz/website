@@ -5,7 +5,7 @@
         @foreach($posts as $post)
             <article>
                 <h1><a href="{{ route('article', $post->getSlug()) }}" title="{{ $post->getTitle() }}">{{ $post->getTitle() }}</a></h1>
-                <span class="meta">Posted on the 24th of December 1984.</span>
+                <span class="meta">Posted on the {{ $post->getFormattedDate('d/m/y') }}.</span>
                 <section class="body">{{ $post->getExcerpt() }}</section>
                 <a href="{{ route('article', $post->getSlug()) }}" title="{{ $post->getTitle() }}" class="read-more">Read more &rarr;</a>
             </article>

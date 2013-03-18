@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <title></title>
+        <title>Code Happy! | Dayle Rees</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
@@ -30,6 +30,7 @@
                     <img src="{{ asset('img/colourschemesad.jpg') }}" alt="Dayle Rees Colour Schemes">
                     <span class="caption">A collection of unique colour schemes for Sublime Text 2 and more.</span>
                 </a>
+                <span class="copyright">Copyright &copy; {{ date('Y') }}<br />Dayle Rees.</span>
             </header>
             <section class="content">
                 @yield('body')
@@ -37,11 +38,8 @@
             <div class="clearfix"></div>
         </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="{{ asset('js/vendor/jquery-1.9.0.min.js') }}"><\/script>')</script>
-        <script src="{{ asset('js/plugins.js') }}"></script>
-        <script src="{{ asset('js/main.js') }}"></script>
 
+        <script src="{{ asset('js/main.min.js') }}"></script>
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

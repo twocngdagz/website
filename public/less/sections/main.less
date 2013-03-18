@@ -97,7 +97,7 @@ a, a:visited
 
             a, a:visited
             {
-                color:#999;
+                color:#777;
                 .transition(.2s, linear);
 
                 &:hover
@@ -113,7 +113,7 @@ a, a:visited
             display:block;
             font-family: "pragmatica-web";
             font-weight:200;
-            color:#ddd;
+            color:#bbb;
             font-size:0.8em;
             line-height:1em;
             margin:0.5em 0 2em 0;
@@ -123,6 +123,7 @@ a, a:visited
         {
             line-height:1.6em;
             margin:0 0 2em 0;
+            color:#555;
         }
 
         .back-link, .read-more
@@ -136,7 +137,7 @@ a, a:visited
         {
             font-size:0.7em;
             padding:2em;
-            background-color:#474545;
+            background-color:#333131;
             margin:2em 0 3em 0;
 
             code
@@ -198,7 +199,7 @@ a, a:visited
         a, a:visited
         {
             display:inline-block;
-            padding:0.5em;
+            padding:0.6em;
             background-color:#D9D5CE;
             color:#8C887D;
             font-family: "pragmatica-web";
@@ -254,9 +255,9 @@ a, a:visited
 
         .caption
         {
-            background-color:darken(@background, 35%);
+            background-color:@orangeHighlight;
             color:#fff;
-            text-shadow:0 1px 1px darken(@background, 55%);
+            text-shadow:0 1px 1px darken(@orangeHighlight, 25%);
         }
     }
 
@@ -267,7 +268,20 @@ a, a:visited
         font-size:0.8em;
         text-align:center;
         padding:0.5em;
-        color:darken(@background, 55%);
+        color:darken(@background, 65%);
         .transition(.2s, linear);
     }
+}
+
+.copyright
+{
+    font-size:0.7em;
+    display:block;
+    text-align:center;
+    text-transform:uppercase;
+    color:darken(@background, 15%);
+    border-top:1px solid darken(@background, 5%);
+    padding-top:1em;
+    font-family: "pragmatica-web";
+    font-weight:200;
 }
