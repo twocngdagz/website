@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://daylerees.com/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/05/20/code-happy/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2013/02/13/what-to-expect-from-me-at-laracon/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/09/13/laravel-the-bright-future/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/08/07/answering-questions/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/07/11/code-happy-now-in-print/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/06/30/improved-tutorials/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/06/09/thoughts-on-coda-2/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/06/07/laravel-on-github-now-with-labels/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/viewall/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/category/laravel-tutorials/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/05/27/my-dev-setup/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/05/27/code-happy-update/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/05/20/why-laravel-3-2-is-going-to-rock/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/05/18/trick-validation-within-models/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/05/02/laravel-3-2-the-future-is-bright/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/04/30/laravel-validation/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/04/26/laravel-encryption/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/04/20/laravel-the-ioc-container/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/04/15/laravel-handling-input/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/04/15/laravel-links-and-urls/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/04/15/laravel-forms/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/04/13/trick-chainable-libraries/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/04/13/trick-psychic-controllers/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/04/13/laravel-configuration/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/04/11/laravel-autoloading-classes/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/04/10/laravel-caching/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/04/09/laravel-unit-testing/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/04/09/laravel-the-blog-tutorial/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/04/09/site-new-code-blocks/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/04/07/laravel-authentication/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/04/07/laravel-blade/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/04/06/notable-blade-syntax-support-by-medalink/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/04/06/laravel-events/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/04/04/laravel-eloquent-orm/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/04/04/laravel-fluent-query-builder/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/04/02/laravel-buying-time/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/04/01/game-damn-it/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/04/01/laravel-migrations/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/03/31/release-code-happy/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/03/31/book-code-happy/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/03/29/laravel-the-untold-story/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/03/28/laravel-routes-with-closures/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/03/27/laravel-using-controllers/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/03/26/laravel-project-structure/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2012/03/25/laravel-getting-started/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2011/12/07/new-codeigniter-library-layout/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2011/10/05/meetings/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/2011/09/07/new-theme/</loc>
+</url>
+<url>
+  <loc>http://daylerees.com/layout/</loc>
+  <lastmod>2011-11-25T16:22:09+00:00</lastmod>
+</url>
+</urlset>

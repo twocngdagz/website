@@ -7,6 +7,12 @@
 View::share('title', 'Web development, design, and other nerdy topics!');
 
 /**
+ * Share a default description across all views. This can be overriden within
+ * the controller action.
+ */
+View::share('description', 'A collection of articles about web development and design and a number of tools to make our lives as developers easier.');
+
+/**
  * Bind the article repository within the container.
  */
 App::instance('blog', new Website\Repository\ArticleRepository());

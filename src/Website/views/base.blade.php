@@ -7,7 +7,7 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <title>{{ $title }} | Dayle Rees</title>
-        <meta name="description" content="" />
+        <meta name="description" content="{{ $description }}" />
         <meta name="keywords" content="dayle,rees,php,laravel,framework,code,happy,bright" />
         <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" href="{{ asset('css/style.css') }}" />

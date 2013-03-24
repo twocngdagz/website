@@ -40,6 +40,7 @@ class BlogController extends Controller
         $post = $blog->findBySlug($slug);
         $data['post'] = $post;
         $data['title'] = $post->getTitle();
+        $data['description'] = strip_tags($post->getExcerpt());
         return View::make('single', $data);
     }
 
