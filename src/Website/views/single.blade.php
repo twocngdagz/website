@@ -4,7 +4,7 @@
     <section class="posts">
         <article>
             <h1><a href="{{ route('article', $post->getSlug()) }}" title="{{ $post->getTitle() }}">{{ $post->getTitle() }}</a></h1>
-            <span class="meta">Posted on the 24th of December 1984.</span>
+            <span class="meta">Posted on the {{ $post->getFormattedDate('jS') }} of {{ $post->getFormattedDate('F Y') }}.</span>
             <section class="body">{{ $post->getHtml() }}</section>
             <a href="{{ route('index') }}" title="Back to the DayleRees.com home page." class="back-link">&larr; Back to index.</a>
         </article>

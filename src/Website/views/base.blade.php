@@ -6,12 +6,12 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <title>Code Happy! | Dayle Rees</title>
+        <title>{{ $title }} | Dayle Rees</title>
         <meta name="description" content="" />
+        <meta name="keywords" content="dayle,rees,php,laravel,framework,code,happy,bright" />
         <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
-        <script type="text/javascript" src="//use.typekit.net/srt0kec.js"></script>
-        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <script type="text/javascript" src="//use.typekit.net/srt0kec.js" onload="try{Typekit.load();}catch(e){}" async></script>
         <script src="{{ asset('js/vendor/modernizr-2.6.2.min.js') }}"></script>
     </head>
     <body>
@@ -22,6 +22,10 @@
         <div class="container">
             <header class="sidebar">
                 <a href="{{ route('index') }}" title="Dayle Rees" class="logo"><img src="{{ asset('img/logo.png') }}" /></a>
+                <a href="{{ route('about') }}" title="Code Happy for the Laravel PHP Framework" class="ad-link">
+                    <img src="{{ asset('img/dayle.gif') }}" alt="Dayle Rees">
+                    <span class="caption">Dayle Rees is a british developer and design enthusiast. Find out more..</span>
+                </a>
                 <a href="http://leanpub.com/codehappy" title="Code Happy for the Laravel PHP Framework" class="ad-link">
                     <img src="{{ asset('img/codehappyad.jpg') }}" alt="Code Happy">
                     <span class="caption">Code Happy, the number one resource for learning the Laravel PHP framework.</span>

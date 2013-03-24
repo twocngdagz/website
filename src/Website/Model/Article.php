@@ -7,6 +7,9 @@ use dflydev\markdown\MarkdownExtraParser;
 
 class Article
 {
+    /**
+     * Splitter for excerpt.
+     */
     const MORE_SPLITTER = '/---more---/';
 
     /**

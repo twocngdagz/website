@@ -16,7 +16,7 @@
 
 body
 {
-    font-family: "proxima-nova", serif;
+    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color:#8F8772;
     background-color:@background;
 }
@@ -70,7 +70,7 @@ a, a:visited
     {
         margin-bottom:0.5em;
         padding:0.5em;
-        font-family: "pragmatica-web";
+        font-family: "pragmatica-web", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight:200;
         display:block;
         background-color:darken(@background, 5%);
@@ -89,10 +89,16 @@ a, a:visited
         -webkit-box-shadow:0 2px 3px #D6D3CB;
         box-shadow:0 2px 3px #D6D3CB;
 
+        h1,
+        h2,
+        h3
+        {
+            font-family: "pragmatica-web", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+            font-weight:200;
+        }
+
         h1
         {
-            font-family: "pragmatica-web";
-            font-weight:200;
             margin:0;
 
             a, a:visited
@@ -111,7 +117,7 @@ a, a:visited
         .meta
         {
             display:block;
-            font-family: "pragmatica-web";
+            font-family: "pragmatica-web", "Helvetica Neue", Helvetica, Arial, sans-serif;;
             font-weight:200;
             color:#bbb;
             font-size:0.8em;
@@ -129,7 +135,7 @@ a, a:visited
         .back-link, .read-more
         {
             display:block;
-            font-family: "pragmatica-web";
+            font-family: "pragmatica-web", "Helvetica Neue", Helvetica, Arial, sans-serif;;
             font-weight:200;
         }
 
@@ -162,6 +168,25 @@ a, a:visited
             .atv { color: #bcd42a }
             .dec, .var { color: #606 }
             .fun { color: red }
+        }
+
+        img
+        {
+            display:block;
+            margin:0 auto;
+        }
+
+        p>code
+        {
+            font-size:0.8em;
+            font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+            background-color:#FAEBE3;
+            padding:0 0.5em;
+            display:inline-block;
+            line-height:1.5em;
+            color:#8A5033;
+            text-shadow:1px 1px 0 #fff;
+            .rounded(3px);
         }
     }
 }
@@ -202,7 +227,7 @@ a, a:visited
             padding:0.6em;
             background-color:#D9D5CE;
             color:#8C887D;
-            font-family: "pragmatica-web";
+            font-family: "pragmatica-web", "Helvetica Neue", Helvetica, Arial, sans-serif;;
             font-weight:200;
             margin-right:0.3em;
             text-decoration:none;
@@ -282,6 +307,6 @@ a, a:visited
     color:darken(@background, 15%);
     border-top:1px solid darken(@background, 5%);
     padding-top:1em;
-    font-family: "pragmatica-web";
+    font-family: "pragmatica-web", "Helvetica Neue", Helvetica, Arial, sans-serif;;
     font-weight:200;
 }

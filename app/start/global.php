@@ -50,6 +50,7 @@ Log::useDailyFiles(__DIR__.'/../storage/logs/'.$logFile);
 App::error(function(Exception $exception, $code)
 {
 	Log::error($exception);
+    return Redirect::route('404');
 });
 
 /*

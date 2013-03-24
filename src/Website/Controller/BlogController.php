@@ -21,13 +21,25 @@ class BlogController extends Controller
     }
 
     /**
+     * Show the about me page.
+     */
+    public function showAbout()
+    {
+        $data['title'] = 'About me';
+        return View::make('about', $data);
+    }
+
+    /**
      * Show a single article.
+     *
      * @param  string $slug
      */
     public function showArticle($slug)
     {
         $blog = App::make('blog');
-        $data['post'] = $blog->findBySlug($slug);
+        $post = $blog->findBySlug($slug);
+        $data['post'] = $post;
+        $data['title'] = $post->getTitle();
         return View::make('single', $data);
     }
 
@@ -39,5 +51,14 @@ class BlogController extends Controller
         $blog = App::make('blog');
         $data['posts'] = $blog->findAll();
         return View::make('sitemap', $data);
+    }
+
+    /**
+     * Show a 404 page.
+     */
+    public function showFour()
+    {
+        $data['title'] = '404 Page Not Found';
+        return View::make('404', $data);
     }
 }
