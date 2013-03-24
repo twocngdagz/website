@@ -4,7 +4,7 @@
  * Share a default title across all views. This can be overriden within
  * the controller action.
  */
-View::share('title', 'Web development, design, and other nerdy topics! | Dayle Rees');
+View::share('title', 'Web development, design, and other nerdy topics!');
 
 /**
  * Bind the article repository within the container.
