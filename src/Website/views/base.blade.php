@@ -22,15 +22,15 @@
         <div class="container">
             <header class="sidebar">
                 <a href="{{ route('index') }}" title="Dayle Rees" class="logo"><img src="{{ asset('img/logo.png') }}" /></a>
-                <a href="{{ route('about') }}" title="Code Happy for the Laravel PHP Framework" class="ad-link">
+                <a href="{{ route('about') }}" title="Code Happy for the Laravel PHP Framework" class="link">
                     <img src="{{ asset('img/dayle.gif') }}" alt="Dayle Rees">
                     <span class="caption">Dayle Rees is a british developer and design enthusiast. Find out more..</span>
                 </a>
-                <a href="http://leanpub.com/codehappy" title="Code Happy for the Laravel PHP Framework" class="ad-link">
+                <a href="http://leanpub.com/codehappy" title="Code Happy for the Laravel PHP Framework" class="link">
                     <img src="{{ asset('img/codehappyad.jpg') }}" alt="Code Happy">
                     <span class="caption">Code Happy, the number one resource for learning the Laravel PHP framework.</span>
                 </a>
-                <a href="https://github.com/daylerees/colour-schemes" title="Dayle Rees Colour Schemes for Sublime Text 2 and more." class="ad-link">
+                <a href="https://github.com/daylerees/colour-schemes" title="Dayle Rees Colour Schemes for Sublime Text 2 and more." class="link">
                     <img src="{{ asset('img/colourschemesad.jpg') }}" alt="Dayle Rees Colour Schemes">
                     <span class="caption">A collection of unique colour schemes for Sublime Text 2 and more.</span>
                 </a>

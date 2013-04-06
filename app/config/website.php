@@ -24,5 +24,5 @@ return array(
     |
     */
 
-    'cache' => 1,
+    'cache' => 15,
 );

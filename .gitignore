@@ -2,6 +2,7 @@
 /vendor
 /app/storage
 /content
+/app/config/app.php
 composer.phar
 composer.lock
 .DS_Store
