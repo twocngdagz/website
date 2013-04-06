@@ -26,7 +26,7 @@
                     <img src="{{ asset('img/dayle.gif') }}" alt="Dayle Rees">
                     <span class="caption">Dayle Rees is a british developer and design enthusiast. Find out more..</span>
                 </a>
-                <a href="http://leanpub.com/codehappy" title="Code Happy for the Laravel PHP Framework" class="link">
+                <a href="http://codehappy.daylerees.com" title="Code Happy for the Laravel PHP Framework" class="link">
                     <img src="{{ asset('img/codehappyad.jpg') }}" alt="Code Happy">
                     <span class="caption">Code Happy, the number one resource for learning the Laravel PHP framework.</span>
                 </a>
