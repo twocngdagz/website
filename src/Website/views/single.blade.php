@@ -12,7 +12,7 @@
                 <div id="disqus_thread"></div>
                 <script type="text/javascript">
                     var disqus_shortname = 'daylerees';
-                    var disqus_developer = 1;
+                    var disqus_developer = 0;
                     (function() {
                         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
                         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
