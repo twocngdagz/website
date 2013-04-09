@@ -12,7 +12,7 @@ return array(
     |
     */
 
-    'content' => __DIR__.'/../../content',
+    'content' => __DIR__.'/../../../content',
 
     /*
     |--------------------------------------------------------------------------
@@ -35,5 +35,5 @@ return array(
     |
     */
 
-    'asset_path' => 'http://cdn.daylerees.com/',
+    'asset_path' => '/',
 );

@@ -10,9 +10,9 @@
         <meta name="description" content="{{ $description }}" />
         <meta name="keywords" content="dayle,rees,php,laravel,framework,code,happy,bright" />
         <meta name="viewport" content="width=device-width" />
-        <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+        <link rel="stylesheet" href="{{ cdn('css/style.css') }}" />
         <script type="text/javascript" src="//use.typekit.net/srt0kec.js" onload="try{Typekit.load();}catch(e){}" async></script>
-        <script src="{{ asset('js/vendor/modernizr-2.6.2.min.js') }}"></script>
+        <script src="{{ cdn('js/vendor/modernizr-2.6.2.min.js') }}"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -21,17 +21,17 @@
 
         <div class="container">
             <header class="sidebar">
-                <a href="{{ route('index') }}" title="Dayle Rees" class="logo"><img src="{{ asset('img/logo.png') }}" /></a>
+                <a href="{{ route('index') }}" title="Dayle Rees" class="logo"><img src="{{ cdn('img/logo.png') }}" /></a>
                 <a href="{{ route('about') }}" title="Code Happy for the Laravel PHP Framework" class="link">
-                    <img src="{{ asset('img/dayle.gif') }}" alt="Dayle Rees">
+                    <img src="{{ cdn('img/dayle.gif') }}" alt="Dayle Rees">
                     <span class="caption">Dayle Rees is a british developer and design enthusiast. Find out more..</span>
                 </a>
                 <a href="http://codehappy.daylerees.com" title="Code Happy for the Laravel PHP Framework" class="link">
-                    <img src="{{ asset('img/codehappyad.jpg') }}" alt="Code Happy">
+                    <img src="{{ cdn('img/codehappyad.jpg') }}" alt="Code Happy">
                     <span class="caption">Code Happy, the number one resource for learning the Laravel PHP framework.</span>
                 </a>
                 <a href="https://github.com/daylerees/colour-schemes" title="Dayle Rees Colour Schemes for Sublime Text 2 and more." class="link">
-                    <img src="{{ asset('img/colourschemesad.jpg') }}" alt="Dayle Rees Colour Schemes">
+                    <img src="{{ cdn('img/colourschemesad.jpg') }}" alt="Dayle Rees Colour Schemes">
                     <span class="caption">A collection of unique colour schemes for Sublime Text 2 and more.</span>
                 </a>
                 <span class="copyright">Copyright &copy; {{ date('Y') }}<br />Dayle Rees.</span>
@@ -43,7 +43,7 @@
         </div>
 
 
-        <script src="{{ asset('js/main.min.js') }}"></script>
+        <script src="{{ cdn('js/main.min.js') }}"></script>
         <script>
             var _gaq=[['_setAccount', '{{ Config::get('app.ga') }}'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

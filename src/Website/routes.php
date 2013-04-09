@@ -1,5 +1,8 @@
 <?php
 
+/* Include the CDN Helper. */
+require(__DIR__.'/Helper/cdn.php');
+
 /**
  * Share a default title across all views. This can be overriden within
  * the controller action.
