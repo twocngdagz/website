@@ -80,11 +80,27 @@ class Article
         return $markdownExtra->transformMarkdown($html);
     }
 
+    /**
+     * Retrieve the HTML excerpt for the article.
+     *
+     * @return string
+     */
     public function getExcerpt()
     {
         $markdownExtra = new MarkdownExtraParser();
         $parts = preg_split(self::MORE_SPLITTER, $this->body);
         return $markdownExtra->transformMarkdown($parts[0]);
+    }
+
+    /**
+     * Retrieve the plain text excerpt for the article.
+     *
+     * @return string
+     */
+    public function getRawExcerpt()
+    {
+        $parts = preg_split(self::MORE_SPLITTER, $this->body);
+        return $parts[0];
     }
 
     /**

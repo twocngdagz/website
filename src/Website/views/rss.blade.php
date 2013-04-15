@@ -13,7 +13,7 @@
             <link>{{ route('article', $post->getSlug()) }}</link>
             <guid>{{ route('article', $post->getSlug()) }}</guid>
             <pubDate>{{ $post->getFormattedDate(DateTime::RSS) }}</pubDate>
-            <description>[CDATA[ {{ $post->getExcerpt() }} ]]</description>
+            <description><![CDATA[ {{ $post->getExcerpt() }} ]]></description>
         </item>
         @endforeach
     </channel>
