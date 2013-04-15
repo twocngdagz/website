@@ -55,6 +55,16 @@ class BlogController extends Controller
     }
 
     /**
+     * Build an RSS feed from the post collection.
+     */
+    public function showRss()
+    {
+        $blog = App::make('blog');
+        $data['posts'] = $blog->findAll();
+        return View::make('rss', $data);
+    }
+
+    /**
      * Show a 404 page.
      */
     public function showFour()

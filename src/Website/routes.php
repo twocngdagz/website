@@ -29,6 +29,14 @@ Route::get('/sitemap.xml', array(
 ));
 
 /**
+ * Show an RSS feed of all articles.
+ */
+Route::get('/rss.xml', array(
+    'as'    => 'rss',
+    'uses'  => 'Website\Controller\BlogController@showRss'
+));
+
+/**
  * Show the index of all blog posts.
  */
 Route::get('/', array(
