@@ -5,6 +5,7 @@ namespace Website\Controller;
 use App;
 use View;
 use Input;
+use Response;
 use Paginator;
 use Controller;
 
@@ -61,7 +62,10 @@ class BlogController extends Controller
     {
         $blog = App::make('blog');
         $data['posts'] = $blog->findAll();
-        return View::make('rss', $data);
+        $rss = View::make('rss', $data)->render();
+        $response = Response::make($rss, 200);
+        $response->headers->set('Content-Type', 'application/rss+xml');
+        return $response;
     }
 
     /**
