@@ -12,6 +12,7 @@
         <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" href="{{ cdn('css/style.css') }}" />
         <link rel="alternate" type="application/rss+xml" title="Dayle Rees RSS Feed" href="{{ route('rss') }}" />
+        <link href="https://plus.google.com/105926797135674010741" rel="author" />
         <script type="text/javascript" src="//use.typekit.net/srt0kec.js" onload="try{Typekit.load();}catch(e){}" async></script>
         <script src="{{ cdn('js/vendor/modernizr-2.6.2.min.js') }}"></script>
     </head>
