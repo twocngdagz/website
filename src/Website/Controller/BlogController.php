@@ -17,7 +17,7 @@ class BlogController extends Controller
     public function showIndex()
     {
         $blog = App::make('blog');
-        $data['posts'] = $blog->paginate(3);
+        $data['posts'] = $blog->paginate(5);
         return View::make('index', $data);
     }
 

@@ -28,9 +28,13 @@
                     <img src="{{ cdn('img/dayle.gif') }}" alt="Dayle Rees">
                     <span class="caption">Dayle Rees is a british developer and design enthusiast. Find out more..</span>
                 </a>
+                <a href="http://leanpub.com/codebright" title="Code Bright for the Laravel PHP Framework" class="link">
+                    <img src="{{ cdn('img/codebrightad.jpg') }}" alt="Code Bright">
+                    <span class="caption">Code Happy, the number one resource for learning the Laravel 4 PHP framework.</span>
+                </a>
                 <a href="http://codehappy.daylerees.com" title="Code Happy for the Laravel PHP Framework" class="link">
                     <img src="{{ cdn('img/codehappyad.jpg') }}" alt="Code Happy">
-                    <span class="caption">Code Happy, the number one resource for learning the Laravel PHP framework.</span>
+                    <span class="caption">Code Happy, the number one resource for learning the Laravel 3 PHP framework.</span>
                 </a>
                 <a href="https://github.com/daylerees/colour-schemes" title="Dayle Rees Colour Schemes for Sublime Text 2 and more." class="link">
                     <img src="{{ cdn('img/colourschemesad.jpg') }}" alt="Dayle Rees Colour Schemes">
