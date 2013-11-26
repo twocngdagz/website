@@ -30,7 +30,7 @@
                 </a>
                 <a href="http://leanpub.com/codebright" title="Code Bright for the Laravel PHP Framework" class="link">
                     <img src="{{ cdn('img/codebrightad.jpg') }}" alt="Code Bright">
-                    <span class="caption">Code Happy, the number one resource for learning the Laravel 4 PHP framework.</span>
+                    <span class="caption">Code Bright, the number one resource for learning the Laravel 4 PHP framework.</span>
                 </a>
                 <a href="http://codehappy.daylerees.com" title="Code Happy for the Laravel PHP Framework" class="link">
                     <img src="{{ cdn('img/codehappyad.jpg') }}" alt="Code Happy">
