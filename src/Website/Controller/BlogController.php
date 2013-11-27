@@ -85,7 +85,7 @@ class BlogController extends Controller
             $content = file_get_contents($path);
             $markdown = new Markdown();
             $content = $markdown->transformMarkdown($content);
-            return View::make('chapter', array('chapter' => $content));
+            return View::make('chapter', array('chapter' => $content, 'sidebar' => 'codebright'));
         }
         $data['title'] = '404 Page Not Found';
         return View::make('404', $data);

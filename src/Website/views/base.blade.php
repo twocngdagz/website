@@ -24,6 +24,7 @@
         <div class="container">
             <header class="sidebar">
                 <a href="{{ route('index') }}" title="Dayle Rees" class="logo"><img src="{{ cdn('img/logo.png') }}" /></a>
+                @if (!isset($sidebar))
                 <a href="{{ route('about') }}" title="Code Happy for the Laravel PHP Framework" class="link">
                     <img src="{{ cdn('img/dayle.gif') }}" alt="Dayle Rees">
                     <span class="caption">Dayle Rees is a british developer and design enthusiast. Find out more..</span>
@@ -40,6 +41,9 @@
                     <img src="{{ cdn('img/colourschemesad.jpg') }}" alt="Dayle Rees Colour Schemes">
                     <span class="caption">A collection of unique colour schemes for Sublime Text 2 and more.</span>
                 </a>
+                @else
+                    @include($sidebar)
+                @endif
                 <span class="copyright">Copyright &copy; {{ date('Y') }}<br />Dayle Rees.</span>
             </header>
             <section class="content">
