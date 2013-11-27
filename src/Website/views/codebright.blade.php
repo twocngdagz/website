@@ -1,4 +1,5 @@
 <div class="codebright-menu">
+    <h2>Code Bright</h2>
     <ul>
         <li><a href="{{ url('/codebright/the-primers') }}">The Primers</a></li>
         <li><a href="{{ url('/codebright/architecture') }}">Architecture</a></li>

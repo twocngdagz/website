@@ -63,7 +63,7 @@ Route::get('/404', array(
 /**
  * Show a single blog article.
  */
-Route::get('/codebright/{slug}', array(
+Route::get('/codebright/{slug?}', array(
     'as'    => 'codebright_chapter',
     'uses'  => 'Website\Controller\BlogController@showChapter'
 ));

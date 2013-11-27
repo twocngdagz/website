@@ -6,7 +6,7 @@
             <section class="body">
                 {{ $chapter }}
             </section>
-            <a href="{{ route('index') }}" title="Back to the DayleRees.com home page." class="back-link">&larr; Back to index.</a>
+            <a href="{{ url('codebright') }}" title="Back to the DayleRees.com home page." class="back-link">&larr; Back to index.</a>
         </article>
         <section class="comments">
                 <div id="disqus_thread"></div>

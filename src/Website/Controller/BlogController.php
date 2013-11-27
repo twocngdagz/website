@@ -78,7 +78,7 @@ class BlogController extends Controller
         return View::make('404', $data);
     }
 
-    public function showChapter($slug = null)
+    public function showChapter($slug = 'codebright')
     {
         $path = __DIR__.'/../../../codebright/'.$slug.'.md';
         if (file_exists($path)) {
