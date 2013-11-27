@@ -35,5 +35,5 @@ return array(
     |
     */
 
-    'asset_path' => '/',
+    'asset_path' => 'http://cdn.daylerees.com/',
 );

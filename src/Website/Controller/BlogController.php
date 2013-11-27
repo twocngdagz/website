@@ -8,6 +8,7 @@ use Input;
 use Response;
 use Paginator;
 use Controller;
+use dflydev\markdown\MarkdownExtraParser as Markdown;
 
 class BlogController extends Controller
 {
@@ -73,6 +74,19 @@ class BlogController extends Controller
      */
     public function showFour()
     {
+        $data['title'] = '404 Page Not Found';
+        return View::make('404', $data);
+    }
+
+    public function showChapter($slug = null)
+    {
+        $path = __DIR__.'/../../../codebright/'.$slug.'.md';
+        if (file_exists($path)) {
+            $content = file_get_contents($path);
+            $markdown = new Markdown();
+            $content = $markdown->transformMarkdown($content);
+            return View::make('chapter', array('chapter' => $content));
+        }
         $data['title'] = '404 Page Not Found';
         return View::make('404', $data);
     }
